@@ -5,6 +5,21 @@ This guide provides a step-by-step solution for fixing heavy audio distortion (a
 ## 🔴 The Problem
 1. **Audio Loop of Death:** The sound quality constantly cycles between good audio, heavy crackling/scratching noises, and extremely low-quality output/input.
 2. **Total Audio Loss:** After attempting to restart configuration files, all input and output devices disappear from the Pop!_OS control panel, even though PipeWire shows as active.
+---
+## Quick Fix
+## 🚀 Quick Automated Fix
+
+If your microphone or headphones are acting up, cutting out, or missing completely from your settings panel, you can use the automated script included in this repository to repair the audio stack instantly.
+
+### One-Line Instant Execution (No Cloning Required)
+
+You can download and run the script instantly with a single terminal command. This safe method temporarily downloads the script, runs the fix, and cleans up after itself so your desktop stays clean.
+
+```bash
+curl -sSL https://raw.githubusercontent.com/sudo-amro/fix-pop-os-micinput/refs/heads/main/audio-fix.sh -o audio-fix.sh && chmod +x audio-fix.sh && ./audio-fix.sh && rm audio-fix.sh
+```
+
+*Note: Since the script reloads kernel-level audio drivers, it will prompt you for your `sudo` password during execution.*
 
 ---
 
